@@ -8,4 +8,8 @@
 /CRTest/generator/set Pdu
 /CRTest/generator/trigger 1
 /CRTest/generator/range -25 25 -25 25 cm
+<<<<<<< HEAD
 /run/beamOn 1000000
+=======
+/run/beamOn 1000
+>>>>>>> 49762a92982da68ef3af2c1f33f4ed1a5777f27f
