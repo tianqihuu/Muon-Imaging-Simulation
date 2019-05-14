@@ -1,4 +1,0 @@
-/home/mizuki/桌面/CRTest/CRTest/build/CMakeFiles/rebuild_cache.dir
-/home/mizuki/桌面/CRTest/CRTest/build/CMakeFiles/edit_cache.dir
-/home/mizuki/桌面/CRTest/CRTest/build/CMakeFiles/LINK_MAC.dir
-/home/mizuki/桌面/CRTest/CRTest/build/CMakeFiles/CRTest.dir
