@@ -148,9 +148,9 @@ G4bool Analysis::RegisterSD(VirtualSD* sd){
 G4bool Analysis::RegisterRecorder(VirtualRecorder* recorder){
 
 	if(std::find(fRecorder->begin(),fRecorder->end(),recorder)
-		== fRecorder->end())
+		== fRecorder->end())   //vector::end()返回的是越界后的第一个位置，也就是最后一个元素的下一个位置
 	{
-		fRecorder->push_back(recorder);
+		fRecorder->push_back(recorder);    //将新元素record添加到fRecorder后面
 		return true;
 	}
 	else

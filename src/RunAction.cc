@@ -14,10 +14,10 @@
 RunAction::RunAction()
     : G4UserRunAction()
 {
-    G4RunManager::GetRunManager()->SetPrintProgress(1);
+    G4RunManager::GetRunManager()->SetPrintProgress(1);  //return printModulo = 1;
 
 	// Build Analysis Instance
-	Analysis::Instance();
+	Analysis::Instance();   //create an Analysis object
 		// [TODO] Build-option : CRTest_DEBUG_OPTICAL
 	Analysis::Instance()->RegisterRecorder(OpRecorder::Instance());
 		// Default for resolution estimation

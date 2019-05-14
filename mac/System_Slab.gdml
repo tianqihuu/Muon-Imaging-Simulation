@@ -10,6 +10,10 @@
   <!ENTITY Surface_Property SYSTEM "Surface_DefaultProperty.gdml_entity">
   <!ENTITY Groove SYSTEM "Volume_Groove.gdml_entity">
   <!ENTITY Detector SYSTEM "Module_Slab.gdml_entity">
+
+  <!ENTITY Config_matter SYSTEM "Config_matter.gdml_entity">
+  <!ENTITY Solid_matter SYSTEM "Solid_matter.gdml_entity">
+  <!ENTITY Volume_matter SYSTEM "Volume_matter.gdml_entity">
 ]>
 
 <gdml xmlns:gdml="http://gdml.web.cern.ch/GDML/"
@@ -47,6 +51,7 @@
     <variable name="worldZ" value="(detectorPosZ[detectorN]-detectorPosZ[1])*1.2" />
     &Config;
     &Property;
+    &Config_matter;
   </define>
 
   <materials>
@@ -58,11 +63,13 @@
     <box lunit="mm" name="slabModuleS" x="moduleX" y="moduleY" z="moduleZ" />
     &Solid;
     &Surface;
+    &Solid_matter;
   </solids>
 
   <structure>
     &Groove;
     &Detector;
+    &Volume_matter;
 
     <volume name="World">
       <materialref ref="AIR" />
@@ -73,6 +80,10 @@
           <position z="detectorPosZ[iDetector+1]" />
          </physvol>
       </loop>
+      <physvol>
+        <volumeref ref="Matter" />
+        <position z="0" unit="cm" />
+      </physvol>
     </volume>
 
     &Surface_Setup;

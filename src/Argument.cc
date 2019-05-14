@@ -65,7 +65,7 @@ G4bool Argument::Build(int argc, char* argv[])
 	visUse = false;
 #endif
 
-	return Validate();
+	return Validate();  //检查后缀 .root、.gdml是否加上。如未加上，返回false
 }
 
 void Argument::Usage(){

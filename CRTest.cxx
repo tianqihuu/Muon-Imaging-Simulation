@@ -34,14 +34,15 @@
 int main (int argc, char** argv){
     // Handle Arguments
 	Argument args;
-	if(!args.Build(argc, argv)){
-		args.Usage();
+	if(!args.Build(argc, argv))    //Build(argc,argv)处理命令行参数，将执行程序，gdml读出
+	{
+		args.Usage();              //G4cout << " Usage : ./CRTest [.gdml] [.mac] [output] [seed]"<< G4endl;
 		return -1;
 	}
-    // UI Session
+    // UI Session   //定义是否使用UI界面，还是直接命令行跑
     G4UIExecutive* ui = NULL;
     if (args.Ui())
-        ui = new G4UIExecutive(argc, argv);
+        ui = new G4UIExecutive(argc, argv);  
     // Random
     G4Random::setTheEngine(new CLHEP::RanecuEngine);
     G4Random::setTheSeed(args.RndSeed(),3);

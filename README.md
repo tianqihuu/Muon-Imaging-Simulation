@@ -61,8 +61,8 @@ Dependencies : ROOT (with cmake), cry_v1.7 (by LLNL)
 * Generator : UIcmd /CRTest/generator 
 
 # Author
-Yitao WU @ USTC-HEPG410
+TianQi Hu @ USTC-HEPG410
 
-Email : torrecne@mail.ustc.edu.cn
+Email : htq@mail.ustc.edu.cn
 
 License as Geant4 http://cern.ch/geant4/license/
