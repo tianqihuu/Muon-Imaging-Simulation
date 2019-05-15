@@ -2,6 +2,8 @@
 # Build Path
 ################
 .build/
+build/
+build/*
 
 ######################
 ## Visual Studio Code
@@ -223,3 +225,34 @@ pip-log.txt
 
 #Mr Developer
 .mr.developer.cfg
+build/CRTest
+build/CRTest.root
+build/cmake_install.cmake
+build/CMakeFiles/Makefile.cmake
+build/CMakeFiles/CRTest.dir/CRTest.cxx.o
+build/CMakeFiles/CRTest.dir/flags.make
+build/CMakeFiles/CRTest.dir/link.txt
+build/CMakeFiles/CRTest.dir/src/ActionRegister.cc.o
+build/CMakeFiles/CRTest.dir/src/Analysis.cc.o
+build/CMakeFiles/CRTest.dir/src/Argument.cc.o
+build/CMakeFiles/CRTest.dir/src/CryDetector.cc.o
+build/CMakeFiles/CRTest.dir/src/CryGenerator.cc.o
+build/CMakeFiles/CRTest.dir/src/CryHit.cc.o
+build/CMakeFiles/CRTest.dir/src/CryPositionSD.cc.o
+build/CMakeFiles/CRTest.dir/src/EventAction.cc.o
+build/CMakeFiles/CRTest.dir/src/GdmlConstruction.cc.o
+build/CMakeFiles/CRTest.dir/src/Generator.cc.o
+build/CMakeFiles/CRTest.dir/src/MuonRecorder.cc.o
+build/CMakeFiles/CRTest.dir/src/OpRecorder.cc.o
+build/CMakeFiles/CRTest.dir/src/PduGenerator.cc.o
+build/CMakeFiles/CRTest.dir/src/PhysicsList.cc.o
+build/CMakeFiles/CRTest.dir/src/PmtHit.cc.o
+build/CMakeFiles/CRTest.dir/src/PmtSD.cc.o
+build/CMakeFiles/CRTest.dir/src/RunAction.cc.o
+build/CMakeFiles/CRTest.dir/src/StackAction.cc.o
+build/CMakeFiles/CRTest.dir/src/StepAction.cc.o
+build/CMakeFiles/CRTest.dir/src/SysConstruction.cc.o
+build/CMakeFiles/CRTest.dir/src/SysMessenger.cc.o
+build/CMakeFiles/CRTest.dir/src/TrackingAction.cc.o
+build/CMakeFiles/CRTest.dir/src/VirtualRecorder.cc.o
+build/CMakeFiles/CRTest.dir/src/VirtualSD.cc.o

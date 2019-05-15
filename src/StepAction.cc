@@ -60,7 +60,7 @@ void StepAction::UserSteppingAction(const G4Step *aStep)
 			
 			G4VSensitiveDetector* sd = lv->GetSensitiveDetector();
 			if(sd && sd->GetName() == "CryPositionSD")
-				static_cast<CryPositionSD*>(sd)->ProcessHits_more(aStep,pv);
+				static_cast<CryPositionSD*>(sd)->ProcessHits_more(aStep,pv);  //static_cast:C++中的强制类型转换  usage：static_cast<tipe-id>(expression)
 		}
 	}
 
