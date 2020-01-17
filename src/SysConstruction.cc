@@ -7,6 +7,8 @@
 
 #include "CryPositionSD.hh"
 
+#include "G4SDManager.hh"
+
 #include "G4Material.hh"
 #include "G4NistManager.hh"
 #include "G4GeometryManager.hh"
@@ -98,6 +100,7 @@ void SysConstruction::ConstructSDandField()
     G4String sdName = "CryPositionSD";
     CryPositionSD* crySD = new CryPositionSD(sdName);
 
+    G4SDManager::GetSDMpointer()->AddNewDetector(crySD);
     SetSensitiveDetector(fDetector, crySD);
 
     return;

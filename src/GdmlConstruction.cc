@@ -9,6 +9,7 @@
 #include "CryPositionSD.hh"
 #include "PmtSD.hh"
 
+#include "G4SDManager.hh"
 #include "G4GDMLParser.hh"
 #include "G4GDMLAuxStructType.hh"
 
@@ -90,6 +91,8 @@ void GdmlConstruction::ConstructSDandField(){
 		G4String sdName = "CryPositionSD";
 		CryPositionSD* crySD = new CryPositionSD(sdName);
 
+		G4SDManager::GetSDMpointer()->AddNewDetector(crySD);
+
 		SetSensitiveDetector(fDetector, crySD);
 
 		Analysis::Instance()->RegisterSD(crySD);
@@ -99,6 +102,7 @@ void GdmlConstruction::ConstructSDandField(){
 		G4String sdName = "PmtSD";
 		PmtSD* pmtSD = new PmtSD(sdName);
 
+		G4SDManager::GetSDMpointer()->AddNewDetector(pmtSD);
 		SetSensitiveDetector(fPmt, pmtSD);
 
 		Analysis::Instance()->RegisterSD(pmtSD);
